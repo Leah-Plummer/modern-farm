@@ -33,14 +33,14 @@ console.log(yearlyPlan)
 const planAsObjects = plantSeeds(yearlyPlan)
 console.log(planAsObjects)
 
-const firstTest = addPlant(planAsObjects)
-console.log(firstTest)
+const planWithNoArrays = addPlant(planAsObjects)
+console.log(planWithNoArrays)
 
- const secondTest = usePlants(firstTest)
-console.log(secondTest)
+ const copyOfPlan = usePlants(planWithNoArrays)
+console.log(copyOfPlan)
 
-const thirdTest = harvestPlants(secondTest)
-console.log(thirdTest)
+const yearlyHarvest = harvestPlants(copyOfPlan)
+console.log(yearlyHarvest)
 
 const parentHTMLElement = document.querySelector(".container")
-parentHTMLElement.innerHTML = catalog(thirdTest)
+parentHTMLElement.innerHTML = catalog(yearlyHarvest)
