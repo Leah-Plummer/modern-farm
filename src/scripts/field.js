@@ -5,9 +5,6 @@ let copyOfPlantsInField = []
 
 
 
-
-
-
 export const addPlant = (plant) => {
     
     for (let obj of plant){
